@@ -51,29 +51,30 @@ footer .links {
     max-width: 140px;
 }
 
-@media(max-width: 500px) {
-    
+/* For all other sizes except desktop */
+@media (max-width: 1199px) {
+
     footer {
-        height: 170px;
+        height: 120px;
         text-align: center;
+    }
+
+    .social-links {
+        display: none;
     }
 
     footer ul {
         display: inline-block;
-        padding: 2px;
-    }
-
-    footer li {
-        padding-right: 10px;
-        margin-left: 4px;
-        margin-right: 0;
-        float: middle;
         text-align: center;
-        vertical-align: center;
+    }
+    
+    footer .links {
+        min-width: 40px;
+        max-width: 40px;
     }
 
     footer p {
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
         padding-top: 5px;
     }
